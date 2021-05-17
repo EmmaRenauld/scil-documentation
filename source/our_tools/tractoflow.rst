@@ -78,7 +78,7 @@ Using Tractoflow on Compute Canada
             #   - Fix the FRF to (15,4,4) x 10^-4 mm2/s
             #   - Interface seeding
             #   - nbr_seeds 15.
-            nextflow -c ../beluga.conf run ../tractoflow-*/main.nf --root ../input_data_tractoflow \
+            nextflow -c ../beluga.conf run ../tractoflow-*/main.nf --input ../input_data_tractoflow \
                 -with-singularity ../tractoflow_*.img -resume -with-report report.html \
                 --dti_shells "0 1500" --fodf_shells "0 1500" --step 0.5 --nbr_seeds 15 \
                 --wm_seeding false --mean_frf false --set_frf true
